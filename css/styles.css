@@ -29,6 +29,22 @@ body{
         color: #2196F3;
         ;
     }
+    .menu-link-studio{
+ font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+color: #2196F3;
+    }
+    .menu-link-portfolio{
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+color: #2196F3;
+    }
 .mail{
         font-weight: 500;
         font-size: 14px;
@@ -50,6 +66,9 @@ color: #757575;
         .phone-number:focus{
             color: #2196F3;
         }
+        .hero{
+            background: #2F303A;
+        }
         .main-tittle{
 font-weight: 900;
 font-size: 44px;
@@ -60,21 +79,22 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 
 color: #FFFFFF;        }
-        .modal-btn{
- font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-/* identical to box height, or 188% */
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-color: #FFFFFF;
-background-color: transparent; 
-cursor: pointer;}
+.modal-btn{
+    background: #2196F3;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    cursor: pointer;
+}
 .modal-btn:hover,
 .modal-btn:focus{
-    color:#2196F3;
+    color: #FFFFFF;
+    background: #188CE8;
 }
 .tittle{
 font-weight: 700;
@@ -168,24 +188,7 @@ letter-spacing: 0.03em;
 
 color: rgba(255, 255, 255, 0.6);
 }
-.button-type-list button{
-    font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-/* identical to box height, or 162% */
-text-align: center;
-letter-spacing: 0.03em;
-color: #212121;
-cursor: pointer;
-background-color: transparent;
-}
-.button-type-list button:hover,
-.button-type-list button:focus{
-    background: #2196F3;
-    /* shadow-middle */
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-}
+
 h2{
 font-weight: 700;
 font-size: 18px;
@@ -203,4 +206,31 @@ p{
     letter-spacing: 0.03em;
     
     color: #757575; 
+}
+.footer{
+    background: #2F303A;
+}
+.button-type-list button{
+    font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+background: #F5F4FA;
+border-radius: 4px;
+cursor: pointer;
+}
+.button-type-list button:hover,
+.button-type-list button:focus{
+    color: #FFFFFF;
+    background: #2196F3;
+}
+.button-type-li button {
+    color: #FFFFFF;
+    background: #2196F3;
+/* shadow-middle */
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
