@@ -1,3 +1,51 @@
+:root {
+    --primary-font-family: 'Open Sans', sans-serif;
+    --secondary-font-family: 'Raleway', sans-serif;
+    --primary-text-color-theme-dark: 157, 164, 189;
+    --secondary-text-color-theme-dark: #ffffff;
+    --primary-text-color-theme-light: #555555;
+    --secondary-text-color-theme-light: #303030;
+    --accent-color: #ff6c00;
+  }
+h1,
+h2,
+h3,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul,
+ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-container{
+    display: flex;
+    align-items: center
+}
+.navigation{
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+}
+.menu-item:not(:last-child){
+    margin-right: 93px;
+    display: block;
+}
 .link{
     text-decoration: none;
 }
@@ -11,6 +59,10 @@
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #2196F3;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
 }
 .logo-accent{
     color: #212121;
@@ -45,12 +97,19 @@ letter-spacing: 0.02em;
 
 color: #2196F3;
     }
+    .adress{
+        display: flex;
+        margin-left: auto;
+        margin-right: 50px;
+    }
 .mail{
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: #757575;}
+        color: #757575;
+        margin-right: 50px;
+    }
         .mail:hover,
         .mail:focus{
             color: #2196F3;
@@ -68,6 +127,16 @@ color: #757575;
         }
         .hero{
             background: #2F303A;
+            text-align: center;
+        }
+        .hero2{
+            padding-top: 94px;
+        }
+        .hero-container{
+            padding-top: 200px;
+            padding-left: 237px;
+            padding-right: 237px;
+            padding-bottom: 280px;
         }
         .main-tittle{
 font-weight: 900;
@@ -77,32 +146,39 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-
-color: #FFFFFF;        }
+color: #FFFFFF; 
+width: 696px; 
+height: 120px;
+}
 .modal-btn{
+    width: 200px;
+    height: 50px;
     background: #2196F3;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
-    display: flex;
+    line-height: 1.87;;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     cursor: pointer;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
 .modal-btn:hover,
 .modal-btn:focus{
     color: #FFFFFF;
     background: #188CE8;
 }
+
 .tittle{
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
 color: #212121;
 }
 .suptittle{
@@ -120,6 +196,7 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+padding-bottom: 35px;
 }
 .our-team-main{
 font-weight: 700;
@@ -128,9 +205,11 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+padding-bottom: 35px;
 }
 .our-team{
     background: #F5F4FA;
+    padding-bottom: 94px;
 }
 .name{
 font-weight: 500;
@@ -140,6 +219,7 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 10px;
 }
 .position{
     font-weight: 400;
@@ -212,6 +292,8 @@ p{
 }
 .footer{
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .button-type-list button{
     font-weight: 500;
@@ -230,10 +312,53 @@ cursor: pointer;
     color: #FFFFFF;
     background: #2196F3;
 }
-.button-type-li button {
+.button-type-li-all button {
     color: #FFFFFF;
     background: #2196F3;
 /* shadow-middle */
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
+margin-right: 8px;
+}
+.table-about{
+    display: flex;
+    justify-content: space-between;
+}
+.our-team-table{
+    display: flex;
+    justify-content: space-between;
+}
+.li-tittle{
+    display: table-cell
+}
+.about{
+    padding-top: 94px;
+}
+.our-team-container{
+    padding-top: 94px;
+}
+.name-div{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.adress-footer{
+    padding-bottom: 9px;
+}
+.button-type{
+    padding-top: 94px;
+}
+.button-type-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-type-li{
+    margin-right: 8px;
+}
+.table{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
